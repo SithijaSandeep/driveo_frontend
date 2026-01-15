@@ -19,6 +19,8 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-2 font-extrabold text-4xl text-gray-900 pl-4">
           Driveo
         </Link>
+      
+ 
 
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
@@ -67,6 +69,12 @@ export default function Header() {
                 >
                   Register
                 </Link>
+                 <Link to="/admin/login" className="flex  font-extrabold  text-blue-900 pl-4">
+          admin
+        </Link>
+        <Link to="/manager/login" className="flex  font-extrabold  text-blue-900 pl-4">
+          manager
+        </Link>
               </>
             );
           })()}
